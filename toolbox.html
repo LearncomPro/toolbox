@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Toolbox</title>
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  min-height: 100vh; display: flex; align-items: center; justify-content: center;
+  font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+  background: #f4f5f8; color: #1a1a2e; padding: 24px;
+}
+.page { width: 100%; max-width: 680px; }
+.header { text-align: center; margin-bottom: 40px; }
+.header h1 { font-size: 28px; font-weight: 700; letter-spacing: -.03em; margin-bottom: 6px; }
+.header p { font-size: 14px; color: #888; }
+
+.section { margin-bottom: 32px; }
+.section-label {
+  font-size: 11px; font-weight: 600; color: #999; text-transform: uppercase;
+  letter-spacing: .08em; margin-bottom: 12px; padding-left: 4px;
+}
+
+.grid {
+  display: grid; grid-template-columns: repeat(auto-fill, minmax(148px, 1fr)); gap: 12px;
+}
+
+.tile {
+  display: flex; flex-direction: column; align-items: center; gap: 12px;
+  padding: 24px 16px 20px; background: #fff; border-radius: 14px;
+  border: 1px solid #e8e8ec; text-decoration: none; color: #1a1a2e;
+  transition: border-color .15s, transform .12s, box-shadow .15s;
+}
+.tile:hover {
+  border-color: #c5c5ce; transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(0,0,0,.06);
+}
+
+.tile-icon {
+  width: 48px; height: 48px; border-radius: 12px;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 24px;
+}
+
+.tile-name { font-size: 13px; font-weight: 600; text-align: center; line-height: 1.3; }
+
+/* Icon backgrounds */
+.bg-coral { background: #FAECE7; color: #D85A30; }
+.bg-purple { background: #EEEDFE; color: #534AB7; }
+.bg-blue { background: #E6F1FB; color: #185FA5; }
+.bg-pink { background: #FBEAF0; color: #993556; }
+.bg-amber { background: #FAEEDA; color: #BA7517; }
+.bg-teal { background: #E1F5EE; color: #0F6E56; }
+.bg-gray { background: #F1EFE8; color: #5F5E5A; }
+</style>
+</head>
+<body>
+<div class="page">
+  <div class="header">
+    <h1>Toolbox</h1>
+    <p>Narzędzia dla zespołu — wszystko w przeglądarce</p>
+  </div>
+
+  <div class="section">
+    <div class="section-label">Image</div>
+    <div class="grid">
+      <a class="tile" href="https://learncompro.github.io/image-compressor/">
+        <div class="tile-icon bg-coral">🗜️</div>
+        <div class="tile-name">Image Compressor</div>
+      </a>
+      <a class="tile" href="https://learncompro.github.io/image-converter/">
+        <div class="tile-icon bg-purple">🔄</div>
+        <div class="tile-name">Image Converter</div>
+      </a>
+      <a class="tile" href="https://learncompro.github.io/image-resizer/">
+        <div class="tile-icon bg-blue">📐</div>
+        <div class="tile-name">Image Resizer</div>
+      </a>
+      <a class="tile" href="https://learncompro.github.io/color-picker/">
+        <div class="tile-icon bg-pink">🎨</div>
+        <div class="tile-name">Color Picker</div>
+      </a>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="section-label">Video</div>
+    <div class="grid">
+      <a class="tile" href="https://learncompro.github.io/video-compressor/">
+        <div class="tile-icon bg-amber">🎬</div>
+        <div class="tile-name">Video Compressor</div>
+      </a>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="section-label">Documents</div>
+    <div class="grid">
+      <a class="tile" href="https://learncompro.github.io/pdf-splitter/">
+        <div class="tile-icon bg-teal">✂️</div>
+        <div class="tile-name">PDF Splitter</div>
+      </a>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="section-label">Security</div>
+    <div class="grid">
+      <a class="tile" href="https://learncompro.github.io/password-generator/">
+        <div class="tile-icon bg-gray">🔑</div>
+        <div class="tile-name">Password Generator</div>
+      </a>
+    </div>
+  </div>
+</div>
+</body>
+</html>
